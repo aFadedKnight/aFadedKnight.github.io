@@ -12,7 +12,9 @@ title: "All Projects"
     {% assign catProjects = site.projects | where: "categoryId", category.categoryId %}
     {% for project in catProjects %}
       <div class="project">
-        <h2>{{ project.name }}</h2>
+        <a href="">
+          <h2>{{ project.name }}</h2>
+        </a>
         {% if project.gallery_folder %}
         <div class="gallery">
             {% for file in site.static_files %}
