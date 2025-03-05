@@ -37,6 +37,17 @@ body {
     font-size: 25px;
 }
 
+.Spacer {
+    padding: 30px;
+}
+
+hr {
+    border-width: 0px;
+    background-color: rgba(49, 49, 49,.5);
+    height: 3px;
+    border-radius: 5px;
+}
+
 h1 {
     text-align: center;
     color: white;

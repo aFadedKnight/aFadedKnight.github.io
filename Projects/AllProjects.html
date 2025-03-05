@@ -1,0 +1,83 @@
+---
+layout: default
+title: "All Projects"
+---
+<link rel="stylesheet" href="../css/AllWork.css">
+<div class="AllProjects">
+  <h1>All Projects</h1>
+</div>
+{% for category in site.categories %}
+  <h2>{{ category.name }}</h2>
+  <div class="category">
+    {% assign catProjects = site.projects | where: "categoryId", category.categoryId %}
+    {% for project in catProjects %}
+      <div class="project">
+        <h2>{{ project.name }}</h2>
+        {% if project.gallery_folder %}
+        <div class="gallery">
+            {% for file in site.static_files %}
+            {% if file.path contains project.gallery_folder and file.extname == '.jpg' or file.path contains project.gallery_folder and file.extname == '.png' %}
+            <div class="galleryItem">
+                <img src="{{ file.path }}" alt="{{ file.name | remove: '.jpg' | remove: '.png' }}" onclick="openModal(this)">
+            </div>              
+            {% endif %}
+          {% endfor %}          
+        </div>
+        {% endif %}
+      </div>
+      <hr>
+    {% endfor %}
+  </div>
+  <div class="Spacer"></div>
+{% endfor %}
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
+<script>
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    var span = document.getElementsByClassName("close")[0];
+  
+    function openModal(img) {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      
+      // Reset any previous styling
+      modalImg.style.width = '';
+      modalImg.style.height = '';
+      
+      // After the image loads, adjust its size if necessary
+      modalImg.onload = function() {
+        var imgRatio = this.naturalWidth / this.naturalHeight;
+        var windowRatio = window.innerWidth / window.innerHeight;
+        
+        if (imgRatio > windowRatio) {
+          // Image is wider than the window ratio
+          this.style.width = '90vw';
+          this.style.height = 'auto';
+        } else {
+          // Image is taller than the window ratio
+          this.style.height = '90vh';
+          this.style.width = 'auto';
+        }
+      }
+    }
+  
+    var images = document.querySelectorAll('.galleryItem img');
+    images.forEach(function(img) {
+      img.onclick = function() {
+        openModal(this);
+      }
+    });
+  
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>  
