@@ -7,15 +7,8 @@ title: Home
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="css/carousel.css">
 <body>
-    <div class="DemoReel">
-        <div class="ReelText"><h1>Demo Reel</h1></div>
-        <div class="ReelVideo">
-            <div class="VideoContainer">
-                <iframe class="Video" src="https://www.youtube.com/embed/6zV8VgTCcFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
     <div class="FrontItems">
+        <h1>Featured Work</h1>
         <div class="swiper swiper-container-1" id="swiper-container-1">
             <div class="swiper-wrapper">
                 {% for slide in site.indexSlides %}
@@ -30,6 +23,14 @@ title: Home
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <div class="DemoReel">
+        <div class="ReelText"><h1>Demo Reel</h1></div>
+        <div class="ReelVideo">
+            <div class="VideoContainer">
+                <iframe class="Video" src="https://www.youtube.com/embed/6zV8VgTCcFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
     <script>
@@ -52,8 +53,6 @@ title: Home
         <p class="FollowParagraph">Hi, I am Nicky Jushchyshyn. Currently a student at Drexel University currently getting my BS in Animation and Visual Effects and MS in Digital Media. Expected to graduate in 2025 I am hoping to find myself working in virtual production using Unreal Engine.</p>
         <img src="imgs/NickyHeadshot-1080.png" alt="Photo Headshot of Nicky Jushchyshyn">
     </div>
-    <div class="Blog">
-        <a href="Projects/Categories/Blog" style="font-size: 50px">Blog Posts</a>
-    </div>
+    <div class="Spacer"></div>
 </body>
 <script src="js/indexlogic.js"></script>

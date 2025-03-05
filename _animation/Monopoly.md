@@ -1,6 +1,6 @@
 ---
-title: Lakehouse Shot
-img: ../imgs/MonopolyCar.png
+title: Monopoly
+img: ../imgs/Animation/Monopoly/MonopolyCar.png
 link:
 alt_text: Mini golfing robot
 ---

@@ -1,6 +1,6 @@
 ---
 title: Lakehouse Shot
-img: ../imgs/VirtualProduction/LakeHouseEvening.png
+img: ../imgs/VirtualProduction/LakeHouse/LakeHouseEvening.png
 link:
 alt_text: Mini golfing robot
 ---
