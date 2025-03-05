@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="../../css/Categories.css">
+<div class="banner">
+    <img src="{{ page.categoryIMG }}" alt="Banner Image">
+    <div class="overlay"></div>
+</div>
+<h1 class="CategoryTitle">{{ page.categoryTitle }}</h1>
+<div class="Projects">
+    {% assign projects = site[page.category] %}
+    {% for project in projects %}
+    <a class="Project" href="{{ project.link }}">
+      <img src="{{ project.img }}" alt="{{ project.alt_text }}">
+      <div class="Project-Name">
+          <h3>{{ project.title }}</h3>
+      </div>
+    </a>
+    {% endfor %}
+</div>
