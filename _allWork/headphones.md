@@ -1,6 +1,6 @@
 ---
 title: Headphones
 alt_text: Headphone Model
-img: ../imgs/headphones/3PointLighting.jpg
+img: ../imgs/Headphones/3PointLighting.jpg
 link:
 ---
