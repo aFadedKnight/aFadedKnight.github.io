@@ -20,21 +20,27 @@ body {
     padding-top: 30px;
 }
   
-.Center img {
-    max-width: 600px;
+p img {
     min-width: 100px;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
+    border-radius: 10px;
+    padding: 5px;
 }
   
-.FollowParagraph {
-    width: 50%;
-    padding: 1%;
+p {
+    width: 75%;
     background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
     color: white;
     font-size: 25px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px; 
 }
 
 .Spacer {
@@ -64,19 +70,44 @@ h2{
     padding: 40px;
 }
 
-p{
+p a {
+    color: greenyellow;
     text-align: center;
-    font-size: 20px;  
-	font-weight: 500;
-    color: white;
-    padding: 10px; 
+    width: 100%;
+}
+
+@media (max-width: 4000px) {
+    body {
+        background-size: 350px;
+    }
+    p {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 2500px) {
+    body {
+        background-size: 350px;
+    }
+    p {
+        font-size: 33px;
+    }
+}
+
+@media (max-width: 1500px) {
+    body {
+        background-size: 350px;
+    }
+    p {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 1000px) {
     body {
         background-size: 350px;
     }
-    .FollowParagraph {
+    p {
         font-size: 23px;
     }
 }
@@ -85,7 +116,7 @@ p{
     body {
         background-size: 225px;
     }
-    .FollowParagraph {
+    p {
         font-size: 18px;
     }
 }
@@ -94,7 +125,7 @@ p{
     body {
         background-size: 150px;
     }
-    .FollowParagraph {
+    p {
         font-size: 14px;
     }
 }

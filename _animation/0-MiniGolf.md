@@ -1,6 +1,6 @@
 ---
 title: Mini Golf Robot
 img: ../imgs/Animation/Minigolf/MiniGolfBall.png
-link:
+link: ../Projects/MiniGolfRobot
 alt_text: Mini golfing robot
 ---

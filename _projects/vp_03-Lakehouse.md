@@ -2,5 +2,5 @@
 categoryId: virtualProd
 name: Lakehouse
 gallery_folder: "imgs/VirtualProduction/Lakehouse"
-link:
+link: ../Projects/Lakehouse
 ---

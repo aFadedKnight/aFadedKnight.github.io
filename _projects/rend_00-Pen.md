@@ -2,5 +2,5 @@
 categoryId: 3dRenders
 name: Pen Model
 gallery_folder: "imgs/Renders/Pen"
-link:
+link: ../Projects/3DPen
 ---
