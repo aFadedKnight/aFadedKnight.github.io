@@ -1,5 +1,5 @@
 .AllProjects {
-    background-image: linear-gradient(90deg,rgba(0,0,0,0)5%, #2f6905,rgba(0,0,0,0)95%);
+    background-image: linear-gradient(90deg,rgba(0,0,0,0)5%, var(--blue-2),rgba(0,0,0,0)95%);
 }
 
 .category {
@@ -7,7 +7,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 30px;
-    background-color: rgb(80, 80, 80);
+    background-color: var(--gray-2);
     width: 75%;
     margin: 0 auto;
     border-radius: 20px;
@@ -15,7 +15,7 @@
 }
 
 .project {
-    background-image: linear-gradient(330deg,#2f6905,#183503);
+    background-image: linear-gradient(330deg,var(--blue-2),var(--green-2));
     border-radius: 5px;
 }
 
@@ -34,7 +34,7 @@
 .galleryItem {
     overflow: hidden;
     transition: all 0.3s ease 0s;
-    background-image: linear-gradient(45deg,#2f6905,#214904);
+    background-image: linear-gradient(45deg,var(--green-1),var(--green-2));
     color: white;
     position: relative; /* Position relative for absolute positioning of the image */
     overflow: hidden; /* Hide overflow to maintain aspect ratio */
@@ -45,7 +45,7 @@
 .galleryItem:hover {
     cursor: pointer;
     transform: scale(.95);
-    box-shadow: 0px 7px 7px #2f690586;
+    box-shadow: 0px 7px 7px var(--green-1);
     color: white;
 }
 

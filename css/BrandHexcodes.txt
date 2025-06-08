@@ -1,0 +1,7 @@
+Green 1 : #3f8d41
+Green 2: #28451F
+Blue 1: #89d5ee
+Blue 2: #008caa
+Gray 1: #757575
+Gray 2: #4c4c4d
+Gray 3: #222222
